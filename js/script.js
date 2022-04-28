@@ -9,22 +9,27 @@
  * Check servie worker.
  */
 if (navigator.serviceWorker) {
-  navigator.serviceWorker.register("/ICS20-Unit6-01-PWA/sw.js", {
-    scope: "/ICS20-Unit6-01-PWA/",
+  navigator.serviceWorker.register("/ICS20-Unit5-03-HTML/sw.js", {
+    scope: "/ICS20-Unit5-03-HTML/",
   })
 }
 
 /**
- * This function converts the degrees from fahrenheit to celsius
+ * This function tells user what movies they can watch
  */
 function convert() {
   // input
-  const fahrenheit = parseInt(document.getElementById("fahrenheit").value)
+  var age = parseInt(document.getElementById("How old are you?").value)
 
   // process
-  const celsius = ((fahrenheit - 32) * 5) / 9
-
-  // output
-  document.getElementById("celsius").innerHTML =
-    "<p>The  temperature in celsius is: " + celsius.toFixed(2) + "°<p>"
-}
+  if (age > == 17) {
+    console.log("You can see an R movie alone.");
+  } else if (age > == 13) {
+    console.log("You can see a PG-13 movie alone.");
+  } else if (age > == 5) {
+    console.log("You can see a G or PG movie alone.");
+  } else {
+    console.log("You're too young to watch most things.");
+  }
+  console.log("Thank you for verifying your age!");
+  
