@@ -17,19 +17,18 @@ if (navigator.serviceWorker) {
 /**
  * This function tells user what movies they can watch
  */
-function convert() {
+function myButtonClicked() {
   // input
-  var age = parseInt(document.getElementById("How old are you?").value)
+  const age = parseInt(document.getElementById("age").value)
 
   // process
-  if (age > == 17) {
-    console.log("You can see an R movie alone.");
-  } else if (age > == 13) {
+  if (age > = 17) {
+    console.log("You can see an R rated movie alone.");
+  } else if (age > = 13) {
     console.log("You can see a PG-13 movie alone.");
-  } else if (age > == 5) {
+  } else if (age > = 5) {
     console.log("You can see a G or PG movie alone.");
   } else {
     console.log("You're too young to watch most things.");
   }
   console.log("Thank you for verifying your age!");
-  
