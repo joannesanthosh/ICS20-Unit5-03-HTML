@@ -38,25 +38,29 @@
             <th>
               <h5>Please select your age range</h5>
               <div>
-             <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-1">
-                <input type="radio" id="option-1" class="mdl-radio__button" name="options" value="1" checked>
+             <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="age17">
+                <input type="radio" id="age17" class="mdl-radio__button" name="options" value="0" checked = "true">
                 <span class="mdl-radio__label">17+</span>
              </label>
-             <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-2">
-                <input type="radio" id="option-2" class="mdl-radio__button" name="options" value="2" checked>
+             <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="age13">
+                <input type="radio" id="age13" class="mdl-radio__button" name="options" value="0" checked = "true">
                 <span class="mdl-radio__label">13+</span>
              </label>
-             <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-3">
-                <input type="radio" id="option-3" class="mdl-radio__button" name="options" value="3" checked>
+             <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="age5">
+                <input type="radio" id="age5" class="mdl-radio__button" name="options" value="0" checked = "true">
                 <span class="mdl-radio__label">5+</span>
              </label>
+            <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="less-than-5">
+                <input type="radio" id="less-than-5" class="mdl-radio__button" name="options" value="0" checked = "true">
+                <span class="mdl-radio__label">less than 5</span>
+            </label>
                 </div>
              <!-- Raised button with ripple -->
               <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" 
               onclick="myButtonClicked()">
                 Enter
               </button>
-              <div id="age"></div>
+              <div id="answer"></div>
               <br />
             </th>
           </tr>          

@@ -18,14 +18,19 @@ if (navigator.serviceWorker) {
  * Input
  */
 function myButtonClicked() {
-  const age = parseInt(document.getElementById("age").value)
-}
+  const age17 = document.getElementById("age17").checked
+  const age13 = document.getElementById("age13").checked
+  const age5 = document.getElementById("age5").checked
+
 
   // process
-  if (age > == 17) {
-    document.getElementById("option-1").innerHTML = "You can watch an R Rated movie"
-  } else if (age > == 13) {
-    document.getElementById("option-2").innerHTML = "You can see a PG-13 movie alone."
-  } else if (age > == 5) {
-    document.getElementById("option-3").innerHTML = "You can see a G or PG movie alone."
+  if (age17 == true) {
+    document.getElementById("answer").innerHTML = "You can watch an R Rated movie"
+  } else if (age13 == true) {
+    document.getElementById("answer").innerHTML = "You can see a PG-13 movie alone."
+  } else if (age5 == true) {
+    document.getElementById("answer").innerHTML = "You can see a G or PG movie alone."
+  } else {
+    document.getElementById("answer").innerHTML = "Uh. You're too young for most things"
   }
+}
