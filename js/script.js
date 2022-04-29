@@ -25,7 +25,7 @@ function myButtonClicked() {
 
   // process
   if (age17 == true) {
-    document.getElementById("answer").innerHTML = "You can watch an R Rated movie"
+    document.getElementById("answer").innerHTML = "You can watch an R Rated movie alone."
   } else if (age13 == true) {
     document.getElementById("answer").innerHTML = "You can see a PG-13 movie alone."
   } else if (age5 == true) {
